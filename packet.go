@@ -322,12 +322,13 @@ const (
 	OptionTZPOSIXString    OptionCode = 100
 	OptionTZDatabaseString OptionCode = 101
 
-	OptionDomainSearch OptionCode = 119
+	OptionCaptivePortal OptionCode = 114
+	OptionDomainSearch  OptionCode = 119
 
 	OptionClasslessRouteFormat OptionCode = 121
-	
+
 	// From RFC3942 - Options Used by PXELINUX
-	OptionPxelinuxMagic OptionCode = 208
+	OptionPxelinuxMagic      OptionCode = 208
 	OptionPxelinuxConfigfile OptionCode = 209
 	OptionPxelinuxPathprefix OptionCode = 210
 	OptionPxelinuxReboottime OptionCode = 211
