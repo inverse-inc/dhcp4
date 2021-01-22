@@ -11,9 +11,10 @@ const (
 	_OptionCode_name_3 = "OptionClientArchitecture"
 	_OptionCode_name_4 = "OptionTZPOSIXStringOptionTZDatabaseString"
 	_OptionCode_name_5 = "OptionCaptivePortal"
-	_OptionCode_name_6 = "OptionDomainSearch"
-	_OptionCode_name_7 = "OptionClasslessRouteFormat"
-	_OptionCode_name_8 = "End"
+	_OptionCode_name_6 = "OptionRFC7710"
+	_OptionCode_name_7 = "OptionDomainSearch"
+	_OptionCode_name_8 = "OptionClasslessRouteFormat"
+	_OptionCode_name_9 = "End"
 )
 
 var (
@@ -23,9 +24,10 @@ var (
 	_OptionCode_index_3 = [...]uint8{0, 24}
 	_OptionCode_index_4 = [...]uint8{0, 19, 41}
 	_OptionCode_index_5 = [...]uint8{0, 19}
-	_OptionCode_index_6 = [...]uint8{0, 18}
-	_OptionCode_index_7 = [...]uint8{0, 26}
-	_OptionCode_index_8 = [...]uint8{0, 3}
+	_OptionCode_index_6 = [...]uint8{0, 13}
+	_OptionCode_index_7 = [...]uint8{0, 18}
+	_OptionCode_index_8 = [...]uint8{0, 26}
+	_OptionCode_index_9 = [...]uint8{0, 3}
 )
 
 func (i OptionCode) String() string {
@@ -44,12 +46,14 @@ func (i OptionCode) String() string {
 		return _OptionCode_name_4[_OptionCode_index_4[i]:_OptionCode_index_4[i+1]]
 	case i == 114:
 		return _OptionCode_name_5
+	case i == 160:
+                return _OptionCode_name_6
 	case i == 119:
-		return _OptionCode_name_6
-	case i == 121:
 		return _OptionCode_name_7
-	case i == 255:
+	case i == 121:
 		return _OptionCode_name_8
+	case i == 255:
+		return _OptionCode_name_9
 	default:
 		return fmt.Sprintf("OptionCode(%d)", i)
 	}
