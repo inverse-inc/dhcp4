@@ -327,6 +327,8 @@ const (
 
 	OptionClasslessRouteFormat OptionCode = 121
 
+	OptionRFC7710 OptionCode = 160
+
 	// From RFC3942 - Options Used by PXELINUX
 	OptionPxelinuxMagic      OptionCode = 208
 	OptionPxelinuxConfigfile OptionCode = 209
