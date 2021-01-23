@@ -329,6 +329,8 @@ const (
 
 	OptionRFC7710 OptionCode = 160
 
+	OptionAutoProxyConfig OptionCode = 252
+
 	// From RFC3942 - Options Used by PXELINUX
 	OptionPxelinuxMagic      OptionCode = 208
 	OptionPxelinuxConfigfile OptionCode = 209

@@ -14,7 +14,8 @@ const (
 	_OptionCode_name_6 = "OptionRFC7710"
 	_OptionCode_name_7 = "OptionDomainSearch"
 	_OptionCode_name_8 = "OptionClasslessRouteFormat"
-	_OptionCode_name_9 = "End"
+	_OptionCode_name_9 = "OptionAutoProxyConfig"
+	_OptionCode_name_10 = "End"
 )
 
 var (
@@ -27,7 +28,8 @@ var (
 	_OptionCode_index_6 = [...]uint8{0, 13}
 	_OptionCode_index_7 = [...]uint8{0, 18}
 	_OptionCode_index_8 = [...]uint8{0, 26}
-	_OptionCode_index_9 = [...]uint8{0, 3}
+	_OptionCode_index_9 = [...]uint8{0, 21}
+	_OptionCode_index_10 = [...]uint8{0, 3}
 )
 
 func (i OptionCode) String() string {
@@ -52,8 +54,10 @@ func (i OptionCode) String() string {
 		return _OptionCode_name_7
 	case i == 121:
 		return _OptionCode_name_8
-	case i == 255:
+	case i == 252:
 		return _OptionCode_name_9
+	case i == 255:
+		return _OptionCode_name_10
 	default:
 		return fmt.Sprintf("OptionCode(%d)", i)
 	}
